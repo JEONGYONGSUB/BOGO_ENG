@@ -1,0 +1,48 @@
+body { margin: 0; font-family: "Noto Sans KR", sans-serif; }
+header {
+  position: fixed; top: 0; left: 0; width: 100%;
+  background: white; display: flex; justify-content: space-between;
+  padding: 1rem 2rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+header .logo { font-size: 1.5rem; font-weight: bold; color: #d63031; }
+nav a { margin-left: 2rem; text-decoration: none; color: #333; font-weight: 500; }
+nav a.active, nav a:hover { color: #d63031; border-bottom: 2px solid #d63031; }
+
+.hero {
+  height: 100vh;
+  background: url('18.jpg') center/cover no-repeat;
+  display: flex; align-items: center; justify-content: center;
+  color: white; text-align: center; position: relative;
+}
+.hero::after {
+  content: ""; position: absolute; top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.4);
+}
+.hero-text {
+  position: relative; z-index: 1;
+}
+.hero h1 { font-size: 3rem; margin-bottom: 1rem; }
+.hero p { font-size: 1.2rem; margin-bottom: 2rem; }
+.btn {
+  background: #d63031; color: white; padding: 0.8rem 1.5rem;
+  border-radius: 5px; text-decoration: none;
+}
+.btn:hover { background: #e84118; }
+
+.intro, .services {
+  padding: 5rem 2rem; text-align: center;
+}
+.service-cards {
+  display: flex; justify-content: center; gap: 2rem; margin-top: 2rem;
+}
+.card {
+  background: white; border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 1rem; max-width: 300px;
+}
+.card img { width: 100%; border-radius: 10px; }
+
+footer {
+  background: #222; color: #ddd; text-align: center; padding: 2rem 1rem;
+  margin-top: 3rem;
+}
